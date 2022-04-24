@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+<%- include("partials/navbar.ejs") %>
+  
+<div class="row page_container">
+
+  <div class="col-md-10 m-auto">
+    <form action="/submit" method="post">
+      <h3>Create secret anonymously.</h3>
+      <div class="mb-3">
+        <label for="create-secret" class="form-label">Secret</label>
+        <textarea name="secret" class="form-control" id="create-secret" cols="30" rows="10" required maxlength="100"></textarea>
+        <div id="emailHelp" class="form-text text-danger">Max 100 caracters.</div>
+      </div>
+      <div class="mb-3">
+        <label for="color-input" class="form-label">Choose background color for your secret.</label>
+        <input type="color" class="form-control form-control-color" id="color-input" name="bgcolor" value="#46244c" title="Choose your color">
+      </div>
+      <button type="submit" class="btn purple__btn">Submit</button>
+    </form>
+  </div>
+
+</div>
+
+
+<%- include("partials/footer.ejs") %>

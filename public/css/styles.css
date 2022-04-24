@@ -1,0 +1,73 @@
+body{
+  background-color: #eeeeee;
+}
+
+a{
+  color: #fff !important;
+}
+
+textarea{
+  resize: none;
+}
+
+
+/* Classes */
+.page_container{
+  padding: 2% 15%;
+}
+
+/* Navbar */
+.navbar__style{
+  background-color: #46244C;
+}
+
+
+/* Home Page */
+.secret-home-icon{
+  font-size: 5rem;
+}
+.register__btn{
+  border: 1px solid #46244c;
+  color: #46244C !important;
+}
+.purple__btn{
+  background-color: #46244C;
+  color: #FFF;
+}
+.purple__btn:hover{
+  background-color: #62256c !important;
+  color: #FFF !important;
+}
+.register__btn:hover{
+  border: 1px solid #62256c !important;
+}
+
+
+/* Secrets Page */
+.secret_content{
+  border: 5px solid #eee;
+  border-radius: 10px;
+  color: #FFF;
+  -webkit-text-stroke: 0.5px #333;
+}
+
+.secret__text{
+  height: 200px;
+  font-weight: 600;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width:991px) {
+  .page_container {
+    padding: 2% 7%;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .navbar_container{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}

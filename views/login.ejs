@@ -1,0 +1,40 @@
+<%- include("partials/header.ejs") %>
+
+<div class="row page_container position-absolute top-50 translate-middle-y w-100 mx-0">
+  
+  <div class="col-md-8">
+    <form action="/auth/login" method="post">
+      <h3 class="mb-4">Login</h3>
+      <div class="mb-3">
+        <label for="login-email" class="form-label">Email address</label>
+        <input type="email" name="username" class="form-control" id="login-email" aria-describedby="emailHelp" required>
+      </div>
+      <div class="mb-3">
+        <label for="login-password" class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" id="login-password" required>
+      </div>
+      <button type="submit" class="btn purple__btn">Submit</button>
+    </form>
+  </div>
+
+  <div class="col-md-4 mt-5 mt-md-0">
+    <h3 class="fs-6 mb-3 ">Or Login with an existant social account.</h3>
+    <div class="mb-3">
+      <a href="/auth/google" class="btn btn-block btn-social btn-google w-100" role="button">
+        <i class="fab fa-google"></i>
+        <span>Login with Google</span>
+      </a>
+    </div>
+    <div>
+      <a href="/auth/facebook" class="btn btn-block btn-social btn-facebook w-100" role="button">
+        <i class="fab fa-facebook"></i>
+        <span>Login with Facebook</span>
+      </a>
+    </div>
+  </div>
+
+
+</div>
+
+
+<%- include("partials/footer.ejs") %>
